@@ -2,7 +2,7 @@
 
 > This isn't quite finished, just sorting out some config stuff first. I'm only putting it on GitHub so I have access to it when I get home.
 
-# vim-fireplace-extras
+# vim-scotch
 
 A set of mappings taken from my [dotfiles][], as mentioned in my post [Editing Clojure with Neovim][post]. These are bindings that have improved my usage of [vim-fireplace][] a fair bit, I thought I'd make them easier for others to use by putting them in a tiny plugin.
 
