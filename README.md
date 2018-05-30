@@ -48,9 +48,9 @@ Use your favourite plugin manager, mine is [vim-plug][].
 Plug 'Olical/vim-fireplace-extras'
 ```
 
-## The name
+## Why scotch?
 
-Scotch goes down really well next to a fireplace. And I :heart: Laphroaig ¯\\\_(ツ)\_/¯
+Scotch goes down really well next to a fireplace and I _really_ :heart: Laphroaig ¯\\\_(ツ)\_/¯
 
 ## Unlicenced
 
