@@ -4,12 +4,11 @@ A set of mappings taken from my [dotfiles][], as mentioned in my post [Editing C
 
 ## Mappings
 
-I'm assuming a `localleader` of `,` here, replace it with whatever you use.
+I'm assuming `normal` mode and a `localleader` of `,`, replace it with whatever you use.
 
 | Scotch | Fireplace                                           |
 | ------ | --------------------------------------------------- |
-| `,re`  | `:Eval`                                             |
-| `,re`  | `:Eval`                                             |
+| `,re`  | `:Eval` (in `normal` or `visual`)                   |
 | `,rf`  | `:%Eval`                                            |
 | `,rr`  | `:Require`                                          |
 | `,rR`  | `:Require!`                                         |
