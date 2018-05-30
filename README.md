@@ -6,19 +6,19 @@ A set of mappings taken from my [dotfiles][], as mentioned in my post [Editing C
 
 I'm assuming a `localleader` of `,` here, replace it with whatever you use.
 
-| Scotch | Fireplace |
-| --- | --- |
-| `,re` | `:Eval` |
-| `,re` | `:Eval` |
-| `,rf` | `:%Eval` |
-| `,rr` | `:Require` |
-| `,rR` | `:Require!` |
-| `,rt` | `:RunTests` |
-| `,rl` | `:Last` |
-| `,rc` | `:FireplaceConnect` |
-| `,rx` | Refresh all changed namespaces (like CIDER) |
-| `,rX` | Refresh *all* namespaces (also like CIDER) |
-| `gd` | Go to the definition of the symbol under the cursor |
+| Scotch | Fireplace                                           |
+| ------ | --------------------------------------------------- |
+| `,re`  | `:Eval`                                             |
+| `,re`  | `:Eval`                                             |
+| `,rf`  | `:%Eval`                                            |
+| `,rr`  | `:Require`                                          |
+| `,rR`  | `:Require!`                                         |
+| `,rt`  | `:RunTests`                                         |
+| `,rl`  | `:Last`                                             |
+| `,rc`  | `:FireplaceConnect`                                 |
+| `,rx`  | Refresh all changed namespaces (like CIDER)         |
+| `,rX`  | Refresh *all* namespaces (also like CIDER)          |
+| `gd`   | Go to the definition of the symbol under the cursor |
 
 If you'd just like the function for refreshing namespaces without the mappings, you should probably just copy the code. Please feel free to copy and paste things!
 
