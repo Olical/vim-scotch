@@ -45,7 +45,7 @@ let g:scotch_refresh_dirs = ["src/clj", "src/cljc"]
 Use your favourite plugin manager, mine is [vim-plug][].
 
 ```viml
-Plug 'Olical/vim-fireplace-extras'
+Plug 'Olical/vim-scotch'
 ```
 
 ## Why scotch?
