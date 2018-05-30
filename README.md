@@ -1,14 +1,44 @@
-# DO NOT USE
-
-> This isn't quite finished, just sorting out some config stuff first. I'm only putting it on GitHub so I have access to it when I get home.
-
 # vim-scotch
 
-A set of mappings taken from my [dotfiles][], as mentioned in my post [Editing Clojure with Neovim][post]. These are bindings that have improved my usage of [vim-fireplace][] a fair bit, I thought I'd make them easier for others to use by putting them in a tiny plugin.
+A set of mappings taken from my [dotfiles][], as mentioned in my post [Editing Clojure with Neovim][post]. These are bindings that have improved my usage of [vim-fireplace][] a fair bit.
 
 ## Mappings
 
-...
+I'm assuming a `localleader` of `,` here, replace it with whatever you use.
+
+| Scotch | Fireplace |
+| --- | --- |
+| `,re` | `:Eval` |
+| `,re` | `:Eval` |
+| `,rf` | `:%Eval` |
+| `,rr` | `:Require` |
+| `,rR` | `:Require!` |
+| `,rt` | `:RunTests` |
+| `,rl` | `:Last` |
+| `,rc` | `:FireplaceConnect` |
+| `,rx` | Refresh all changed namespaces (like CIDER) |
+| `,rX` | Refresh *all* namespaces (also like CIDER) |
+| `gd` | Go to the definition of the symbol under the cursor |
+
+If you'd just like the function for refreshing namespaces without the mappings, you should probably just copy the code. Please feel free to copy and paste things!
+
+## Configuration
+
+I use a `.lvimrc` file in my projects that gets loaded by [vim-localvimrc][], here's everything you can set:
+
+```viml
+" What to execute to stop the system before refreshing namespaces.
+" Default: noop
+let g:scotch_stop = "(bounce.system/stop!)"
+
+" What to call after refreshing the namespaces.
+" Default: noop
+let g:scotch_start = "(bounce.system/start!)"
+
+" Directories to search for refreshable namespaces.
+" Default: ["src"]
+let g:scotch_refresh_dirs = ["src/clj", "src/cljc"]
+```
 
 ## Installation
 
@@ -17,6 +47,10 @@ Use your favourite plugin manager, mine is [vim-plug][].
 ```viml
 Plug 'Olical/vim-fireplace-extras'
 ```
+
+## The name
+
+Scotch goes down really well next to a fireplace. And I :heart: Laphroaig ¯\\\_(ツ)\_/¯
 
 ## Unlicenced
 
@@ -33,3 +67,4 @@ Do what you want. Learn as much as you can. Unlicense more software.
 [post]: https://oli.me.uk/2018-05-04-editing-clojure-with-neovim/
 [vim-fireplace]: https://github.com/tpope/vim-fireplace
 [vim-plug]: https://github.com/junegunn/vim-plug
+[vim-localvimrc]: https://github.com/embear/vim-localvimrc
