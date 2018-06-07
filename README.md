@@ -17,6 +17,7 @@ I'm assuming `normal` mode and a `localleader` of `,`, replace it with whatever 
 | `,rc`  | `:FireplaceConnect`                                 |
 | `,rx`  | Refresh all changed namespaces (like CIDER)         |
 | `,rX`  | Refresh *all* namespaces (also like CIDER)          |
+| `,rs`  | Start a CIDER nREPL server through [vim-dispatch][] |
 | `gd`   | Go to the definition of the symbol under the cursor |
 
 If you'd just like the function for refreshing namespaces without the mappings, you should probably just copy the code. Please feel free to copy and paste things!
@@ -41,7 +42,7 @@ let g:scotch_refresh_dirs = ["src/clj", "src/cljc"]
 
 ## Installation
 
-Use your favourite plugin manager, mine is [vim-plug][].
+Use your favourite plugin manager, mine is [vim-plug][]. It depends on [vim-dispatch][] for the `,rs` nREPL binding, you may also want [vim-dispatch-neovim][] if you're in Neovim like myself.
 
 ```viml
 Plug 'Olical/vim-scotch'
@@ -67,3 +68,5 @@ Do what you want. Learn as much as you can. Unlicense more software.
 [vim-fireplace]: https://github.com/tpope/vim-fireplace
 [vim-plug]: https://github.com/junegunn/vim-plug
 [vim-localvimrc]: https://github.com/embear/vim-localvimrc
+[vim-dispatch]: https://github.com/tpope/vim-dispatch
+[vim-dispatch-neovim]: https://github.com/radenling/vim-dispatch-neovim
