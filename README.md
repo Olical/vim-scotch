@@ -6,19 +6,23 @@ A set of mappings taken from my [dotfiles][], as mentioned in my post [Editing C
 
 I'm assuming `normal` mode and a `localleader` of `,`, replace it with whatever you use.
 
-| Scotch | Fireplace                                           |
-| ------ | --------------------------------------------------- |
-| `,re`  | `:Eval` (in `normal` or `visual`)                   |
-| `,rf`  | `:%Eval`                                            |
-| `,rr`  | `:Require`                                          |
-| `,rR`  | `:Require!`                                         |
-| `,rt`  | `:RunTests`                                         |
-| `,rl`  | `:Last`                                             |
-| `,rc`  | `:FireplaceConnect`                                 |
-| `,rx`  | Refresh all changed namespaces (like CIDER)         |
-| `,rX`  | Refresh *all* namespaces (also like CIDER)          |
-| `,rs`  | Start a CIDER nREPL server through [vim-dispatch][] |
-| `gd`   | Go to the definition of the symbol under the cursor |
+| Scotch | Fireplace                                                |
+| ------ | -------------------------------------------------------- |
+| `,re`  | `:Eval` (in `normal` or `visual`)                        |
+| `,rf`  | `:%Eval`                                                 |
+| `,rr`  | `:Require`                                               |
+| `,rR`  | `:Require!`                                              |
+| `,rt`  | `:RunTests`                                              |
+| `,rl`  | `:Last`                                                  |
+| `,rc`  | `:FireplaceConnect`                                      |
+| `,rx`  | Refresh all changed namespaces (like CIDER)              |
+| `,rX`  | Refresh *all* namespaces (also like CIDER)               |
+| `,rs`  | Start a CIDER nREPL server through [vim-dispatch][]      |
+| `,rp`  | Piggieback onto a node nREPL to allow ClojureScript eval |
+| `,rP`  | Disconnect the last Piggieback                           |
+| `gd`   | Go to the definition of the symbol under the cursor      |
+
+> Note: As far as I'm aware, fireplace doesn't allow us to evaluate as ClojureScript in `.cljc` files, but it should work just fine for `.cljs`.
 
 If you'd just like the function for refreshing namespaces without the mappings, you should probably just copy the code. Please feel free to copy and paste things!
 
