@@ -16,6 +16,6 @@ let g:scotch_refresh_dirs = get(g:, 'scotch_refresh_dirs', ["src"])
 autocmd FileType clojure nnoremap <buffer> <silent> <localleader>rx :call scotch#RefreshChanged()<cr>
 autocmd FileType clojure nnoremap <buffer> <silent> <localleader>rX :call scotch#RefreshAll()<cr>
 
-autocmd FileType clojure nnoremap <buffer> <silent> <localleader>rs :Start! clojure -Sdeps '{:deps {cider/cider-nrepl {:mvn/version "0.18.0"}, org.clojure/tools.namespace {:mvn/version "0.2.11"}, nrepl/nrepl {:mvn/version "0.4.4"}, cider/piggieback {:mvn/version "0.3.8"}}}' -e '(require (quote cider-nrepl.main) (quote cider.piggieback) (quote cljs.repl.node)) (cider-nrepl.main/init ["cider.nrepl/cider-middleware" "cider.piggieback/wrap-cljs-repl"])'<cr>
+autocmd FileType clojure nnoremap <buffer> <silent> <localleader>rs :Start! clojure -Ascotch -Sdeps '{:deps {cider/cider-nrepl {:mvn/version "0.18.0"}, org.clojure/tools.namespace {:mvn/version "0.2.11"}, nrepl/nrepl {:mvn/version "0.4.4"}, cider/piggieback {:mvn/version "0.3.8"}}}' -e '(require (quote cider-nrepl.main) (quote cider.piggieback) (quote cljs.repl.node)) (cider-nrepl.main/init ["cider.nrepl/cider-middleware" "cider.piggieback/wrap-cljs-repl"])'<cr>
 autocmd FileType clojure nnoremap <buffer> <silent> <localleader>rp :Piggieback (cljs.repl.node/repl-env)<cr>
 autocmd FileType clojure nnoremap <buffer> <silent> <localleader>rP :Piggieback!<cr>
