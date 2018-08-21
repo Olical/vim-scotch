@@ -18,8 +18,6 @@ I'm assuming `normal` mode and a `localleader` of `,`, replace it with whatever 
 | `,rx`  | Refresh all changed namespaces (like CIDER)              |
 | `,rX`  | Refresh *all* namespaces (also like CIDER)               |
 | `,rs`  | Start a CIDER nREPL server through [vim-dispatch][]      |
-| `,rp`  | Piggieback onto a node nREPL to allow ClojureScript eval |
-| `,rP`  | Disconnect the last Piggieback                           |
 | `gd`   | Go to the definition of the symbol under the cursor      |
 
 > Note: As far as I'm aware, fireplace doesn't allow us to evaluate as ClojureScript in `.cljc` files, but it should work just fine for `.cljs`.
