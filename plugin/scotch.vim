@@ -16,4 +16,4 @@ let g:scotch_refresh_dirs = get(g:, 'scotch_refresh_dirs', ["src"])
 autocmd FileType clojure nnoremap <buffer> <silent> <localleader>rx :call scotch#RefreshChanged()<cr>
 autocmd FileType clojure nnoremap <buffer> <silent> <localleader>rX :call scotch#RefreshAll()<cr>
 
-autocmd FileType clojure nnoremap <buffer> <silent> <localleader>rs :Start! clojure -Ascotch -Sdeps '{:deps {cider/cider-nrepl {:mvn/version "0.18.0"}, org.clojure/tools.namespace {:mvn/version "0.2.11"}}}' -e '(require (quote cider-nrepl.main)) (cider-nrepl.main/init ["cider.nrepl/cider-middleware"])'<cr>
+autocmd FileType clojure nnoremap <buffer> <silent> <localleader>rs :Start! clojure -Ascotch -Sdeps '{:deps {cider/cider-nrepl {:mvn/version "0.18.0"}, org.clojure/tools.namespace {:mvn/version "0.3.0-alpha4"}}}' -e '(require (quote cider-nrepl.main)) (cider-nrepl.main/init ["cider.nrepl/cider-middleware"])'<cr>
